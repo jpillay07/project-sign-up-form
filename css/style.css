@@ -1,0 +1,173 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+  }
+
+  body{
+    font-family: 'Odibee Sans', cursive;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+    
+  }
+
+  .form-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .form-header{
+    flex: 1 1 33%;
+    background-image: url(../images/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .form-content{
+    display: flex;
+    flex-direction: column;
+    flex: 2 2 66%;
+    margin-top: 100px;
+  }
+
+  .main-form{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    color: #fff;
+    align-items: flex-start;
+    background-color: rgb(51, 51, 51);
+  }
+
+  .logo-wrapper{
+    display: flex;
+    height: 170px;
+    background-color: rgba(167, 167, 167, 0.623);
+    margin-top: 200px;
+  }
+
+  .logo{
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+  }
+
+  .form-description{
+    overflow: hidden;
+    color: #fff;
+    font-size: 2em;
+    padding: 50px;
+  }
+
+  label, input{
+    display: block;
+  }
+  label{
+    margin-bottom: 10px;
+  }
+
+  input{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance: none;
+    appearance: none;
+    font-family: 'Odibee Sans', cursive;
+    height: 32px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #fff;border-radius: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  input:focus, input:active, input:focus-within, :focus-visible{
+    appearance: none;
+    outline: none;
+    border: solid 2px rgb(1, 211, 124);
+    box-shadow: 0 1px 2px rgb(89, 215, 163);
+  }
+
+  .form-row-left, .form-row-right{
+    flex: 1 1 40%;
+    display: inline-block;
+    margin: 10px 50px;
+  }
+
+  .btn{
+    appearance: none;
+    font-family: 'Odibee Sans', cursive;
+    margin: 20px 50px;
+    background-color: rgb(30, 223, 244);
+    color: black;
+    border: none;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .btn:hover{
+    background-color:rgb(252, 22, 191);
+    color: white;
+    border: solid 1px #fff;
+  }
+
+  .login-text{
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    box-shadow: rgb(255, 255, 255);
+  }
+
+  .login-link{
+    color: rgb(30, 223, 244);
+  }
+
+  .login-link:hover{
+    color:rgb(252, 22, 191);
+  }
+
+  .password-error{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance: none;
+    appearance: none;
+    font-family: 'Odibee Sans', cursive;
+    height: 32px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px rgb(220, 13, 13);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .password2-row-error::after{
+    content: "Passwords don't match";
+  }
+
+  .password-input{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance: none;
+    appearance: none;
+    font-family: 'Odibee Sans', cursive;
+    height: 32px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #fff;border-radius: 10px;
+    color: white;
+    font-size: 20px;
+  }

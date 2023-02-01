@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <div class="form-header">
+            <div class="logo-wrapper">
+                <img src="images/GameSpotLogo.png" alt=" Game Spot Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="form-content">
+            <div class="form-description">
+                
+                    This is not a real online service! You know you need something like this inyour life to help you realize your deepest dreams. Sign up now to get started. </br> </br>You know you want to!
+                
+            </div>
+            <form class="main-form" action="">
+                <div class="form-row-left">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name"/>
+                </div>
+                <div class="form-row-right">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name"/>
+                </div>
+
+                <div class="form-row-left">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"/>
+                </div>
+                <div class="form-row-right">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone"/>
+                </div>
+
+                <div class="form-row-left">
+                    <label for="password">Password</label>
+                    <input class="password-input" type="password" id="password" name="password" onblur="checkMatch()"/>
+                </div>
+                <div class="form-row-right" id="password2-row">
+                    <label for="password2">Confirm Password</label>
+                    <input class="password-input" type="password" id="password2" name="password2" onblur="checkMatch()"/>
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+                
+
+            </form>
+
+            <div class="login-text">Already have an account? <a class="login-link" href="#">Log In.</a></div>
+        </div>
+
+        
+    </div>
+</body>
+<script defer>
+
+    const password = document.getElementById("password");
+    const password2 = document.getElementById("password2");
+    const passwrdrow = document.getElementById("password2-row");
+
+    function checkMatch(){
+        if(password.value != password2.value){
+            password2.classList.remove("password-input");
+            password2.classList.add("password-error");
+
+            password.classList.remove("password-input");
+            password.classList.add("password-error");
+
+            passwrdrow.classList.add("password2-row-error")
+        }
+        else{
+            password2.classList.remove("password-error");
+            password2.classList.add("password-input");
+
+            password.classList.remove("password-error");
+            password.classList.add("password-input");
+
+            passwrdrow.classList.remove("password2-row-error")
+        }
+    };
+</script>
+</html>

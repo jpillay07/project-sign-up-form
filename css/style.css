@@ -26,6 +26,16 @@
     background-size: cover;
   }
 
+  .sitation{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+  }
+
   .form-content{
     display: flex;
     flex-direction: column;
